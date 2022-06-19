@@ -98,6 +98,10 @@ body li {
   display: inline;
   margin: 2em;
 }
+.info .button .link:hover {
+  background: white;
+  color: palevioletred;
+}
 
 .info-container dt {
   background: rgba(32, 39, 46, 0.7);
@@ -368,5 +372,56 @@ footer .footright a:hover {
     font-size: 1em;
     padding: 0.1em 1em;
     margin: 0;
+  }
+}
+@media only screen and (min-width: 980px) {
+  .info .button {
+    display: flex;
+    text-align: center;
+    padding-left: 18%;
+    font-size: larger;
+  }
+
+  .navBar nav {
+    margin-left: 21%;
+  }
+
+  .slideshow-container {
+    float: left;
+    width: 40%;
+    margin-left: 9em;
+    margin-top: 5em;
+    margin-right: 0;
+  }
+
+  .dots {
+    float: left;
+    margin-right: 50%;
+    margin-left: 25%;
+  }
+
+  .text {
+    float: left;
+    margin-left: 6em;
+  }
+
+  .foot {
+    margin-top: 50%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .foot .footul {
+    padding: 1em;
+  }
+  .foot .footright {
+    padding: 1em;
+  }
+
+  .info-container {
+    float: right;
+    margin-top: 2.5em;
+    margin-right: 7em;
+    position: relative;
+    left: 0;
   }
 }/*# sourceMappingURL=main.css.map */

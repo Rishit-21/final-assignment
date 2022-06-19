@@ -103,6 +103,10 @@ body{
             cursor: pointer;
             display: inline;
             margin:2em;
+            &:hover{
+                background: white;
+                color: palevioletred;
+            }
         }
     }
 }
@@ -365,10 +369,58 @@ footer{
             margin: 0;
         }
         
-
     }
 
+}
+@media only screen and (min-width:980px){
+    .info{
+        .button{
+            display: flex;
+            text-align: center;
+            padding-left: 18%;
+            font-size: larger;
+        }
+    }
+    .navBar nav{
+        margin-left: 21%;
+    }
 
+    .slideshow-container{
+        float: left;
+        width: 40%;
+        margin-left: 9em;
+        margin-top: 5em;
+        margin-right: 0;
+    }
+    .dots{
+        float: left;
+        //margin-top:50%;
+        margin-right: 50%;
+        margin-left: 25%;
+    }
+    .text{
+        //margin-right: 50%;
+        float: left;
+        margin-left: 6em;
+    }
+    .foot{
+        margin-top:50%;
+        margin-left: 10%;
+        margin-right: 10%;
 
+        .footul{
+            padding: 1em;
+        }
 
+        .footright{
+            padding: 1em;
+        }
+    }
+    .info-container{
+        float: right;
+        margin-top: 2.5em;
+        margin-right: 7em;
+        position: relative;
+        left: 0;
+    }
 }
