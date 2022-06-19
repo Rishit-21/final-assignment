@@ -9,6 +9,9 @@ body {
   margin: 0;
   font-family: "poppins";
 }
+body li {
+  list-style: none;
+}
 
 .navBar {
   padding: 1em;
@@ -79,6 +82,8 @@ body {
   border: 1px solid black;
   padding: 0.1em;
   display: inline-block;
+  color: white;
+  line-height: 2.5em;
 }
 .info .button .link {
   background: palevioletred;
@@ -91,6 +96,7 @@ body {
   font-size: 1em;
   cursor: pointer;
   display: inline;
+  margin: 2em;
 }
 
 .info-container dt {
@@ -197,6 +203,10 @@ body {
     opacity: 1;
   }
 }
+.text {
+  display: none;
+}
+
 nav.menu {
   display: block;
 }
@@ -317,28 +327,46 @@ footer .footright a:hover {
     display: none;
   }
 
+  .info {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .text {
+    display: inline;
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+    line-height: 1.25em;
+  }
+
   .navBar .container {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 180px auto;
   }
 
   .navBar nav {
-    text-align: justify;
+    text-align: center;
+    line-height: 0;
     display: flex;
     justify-content: space-between;
     background: none;
     position: unset;
     height: auto;
     width: 100%;
-    padding: 0em;
-    margin-top: 0;
+    padding: 0;
   }
-  .navBar nav .ctn {
+  .navBar nav ul {
     display: flex;
+    margin-top: 2em;
+    margin-bottom: 0;
+    margin-right: 2em;
+    margin-left: -1em;
   }
   .navBar nav a {
     color: black;
     font-size: 1em;
     padding: 0.1em 1em;
+    margin: 0;
   }
 }/*# sourceMappingURL=main.css.map */
