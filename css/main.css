@@ -1,1 +1,344 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+:root {
+  --primary-bgcolor: ;
+}
+
+body {
+  background-image: url("../images/background image.jpg");
+  background-size: contain;
+  margin: 0;
+  font-family: "poppins";
+}
+
+.navBar {
+  padding: 1em;
+}
+.navBar .logo {
+  border: 1em;
+  border-radius: 2em;
+  background: grey;
+  margin-right: 4em;
+}
+.navBar .mlink {
+  display: flex;
+  position: relative;
+  list-style: none;
+}
+.navBar a {
+  color: white;
+  text-decoration: none;
+}
+.navBar .bn {
+  background: black;
+  color: white;
+  padding: 0.5em;
+  font-weight: bold;
+  margin-top: 1em;
+  margin-right: 1em;
+  border-radius: 1em;
+}
+.navBar .bn:hover {
+  background: white;
+  color: black;
+}
+.navBar .fb {
+  background: rgb(134, 134, 239);
+  padding: 0.5em;
+  color: white;
+  display: grid;
+  display: flex;
+  margin-top: -0.5;
+  border-radius: 1em;
+}
+.navBar .fb:hover {
+  background: white;
+  color: rgb(134, 134, 239);
+}
+.navBar nav {
+  display: none;
+}
+.navBar .container {
+  display: flex;
+  place-content: space-between;
+}
+.navBar .menu {
+  cursor: pointer;
+}
+.navBar .button li {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  list-style: none;
+  line-height: 2em;
+}
+
+.info .button {
+  text-align: center;
+  margin: 2em 5em 0 6em;
+  background-color: rgba(32, 39, 46, 0.7);
+  border: 1px solid black;
+  padding: 0.1em;
+  display: inline-block;
+}
+.info .button .link {
+  background: palevioletred;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1em;
+  border-color: pink;
+  color: white;
+  padding: 0.3em;
+  font-size: 1em;
+  cursor: pointer;
+  display: inline;
+}
+
+.info-container dt {
+  background: rgba(32, 39, 46, 0.7);
+  color: white;
+  padding: 0.2em 1.2em;
+  margin-bottom: 0.8em;
+  font-weight: bold;
+}
+.info-container dd {
+  margin-bottom: 1em;
+  line-height: 1.5em;
+  text-decoration: underline;
+  display: flex;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 5em;
+}
+
+.prev {
+  left: 0;
+  border-radius: 5em;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+nav.menu {
+  display: block;
+}
+
+nav {
+  position: fixed;
+  z-index: 999;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background: rgba(32, 39, 46, 0.9);
+  height: 100%;
+  text-decoration: none;
+  /*a{
+      text-decoration: none;
+      display: inline-block;
+  }*/
+  /*.bn{
+      background: black;
+      color: white;
+      padding: .5em;
+      font-weight: bold;
+      float: right;
+      &:hover{
+          background: white ;
+          color: black;
+      }
+      margin: .25em;
+  }*/
+  /*.fb{
+      background: rgb(134, 134, 239);
+      padding: .5em;
+      color: white;
+      display: grid;
+      display: flex;
+      float: right;
+      &:hover{
+          background: white ;
+          color:rgb(134, 134, 239);
+      } 
+      margin: .25em;       
+  }*/
+}
+nav .cross {
+  margin: 0.25em;
+  color: #f2f2f2;
+  background: white;
+  padding: 0.25em;
+  border-radius: 6em;
+}
+nav .cross:hover {
+  cursor: pointer;
+}
+nav .ctn {
+  text-decoration: none;
+  border: none;
+  list-style: none;
+  color: white;
+  float: right;
+  margin-right: 60%;
+  margin-left: 0;
+  text-align: left;
+  font-size: large;
+  margin-top: 3em;
+}
+nav .ctn li {
+  padding-bottom: 2.5em;
+  cursor: pointer;
+}
+nav .ctn li:hover {
+  font-weight: bold;
+}
+
+footer {
+  background: rgba(32, 39, 46, 0.7);
+}
+footer .footul {
+  list-style: none;
+  margin-left: 0;
+  margin-right: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+}
+footer .footul a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  place-content: space-between;
+  position: relative;
+}
+footer .footul a:hover {
+  font-weight: bold;
+}
+footer .footright {
+  list-style: none;
+  display: flex;
+  place-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: black;
+  background: rgba(32, 39, 46, 0.7);
+  border: 1em;
+  padding: 0.25em;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+footer .footright a {
+  color: white;
+  text-decoration: none;
+}
+footer .footright a:hover {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 770px) {
+  .menu, .cross {
+    display: none;
+  }
+
+  .navBar .container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .navBar nav {
+    text-align: justify;
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    position: unset;
+    height: auto;
+    width: 100%;
+    padding: 0em;
+    margin-top: 0;
+  }
+  .navBar nav .ctn {
+    display: flex;
+  }
+  .navBar nav a {
+    color: black;
+    font-size: 1em;
+    padding: 0.1em 1em;
+  }
+}/*# sourceMappingURL=main.css.map */

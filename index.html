@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final-task</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="navBar">
+        <div class="container">
+            <img  class="logo" src="images/logo.png" alt="Elies Salon">
+            <ul class="mlink">
+                <li><a href="#" class="bn">BOOK NOW</a></li>
+                <li><a href="#" class="fb">facebook</a></li>
+            </ul>
+    
+           
+            <img src="images/menu.svg" id="m" class="menu" alt="menu button">
+            
+            <nav>
+                    <img src="images/cross1.png" id="c" class="cross" alt="cross menu">
+               
+                <ul class="ctn">
+                    <li><a href="">HOME</a></li>
+                    <li><a href="#">About session</a></li>
+                    <li><a href="">Service</a></li>
+                    <li><a href=""> Our Stylists</a></li>
+                    <li><a href=""> Special</a></li>
+                    <li><a href="">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section class="info">
+            <div class="container">
+                <ul class="button">
+                    <li>Big experties with a small agency's flexibility and creative flair.</li>
+                    <li><a href="#" class="link"> WHAT WE DO >></a></li>
+                </ul>
+
+            </div>
+            <div class="info-container">
+                <dl>
+                    <dt>HAIR & BEAUTY SERVICE
+                    <dd>Ladies Creativity</dd>
+                    <dd>Beauty Creativity</dd>
+                    <dd>Bridal And Speacial Occasion</dd>
+                    <dd>All other beauty treatment</dd>
+                    </dt>
+                    <dt class="timing">OPENING HOURS
+                    <dd>MONDAY-FRIDAY &nbsp;&nbsp;&nbsp;&nbsp; 9:00am-5:30pm</dd>
+                    <dd>SATURDAY-SUNDAY&nbsp;&nbsp;&nbsp;&nbsp;10:00am-4:00pm</dd>
+                    </dt>
+                </dl>
+
+            </div>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/slide2.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/slide3.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/slide4.jpg" style="width:100%">
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+              <br>
+              
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+        </section>
+        <footer class="foot">
+            <div class="footer-ctn-left">
+                <ul class="footul">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">AboutSalon</a></li>
+                    <li><a href="#">OurStylist</a></li>
+                    <li><a href="#">Sessions</a></li>
+                    <li><a href="#">ContactUs</a></li>
+                </ul>
+            </div>
+            <div class="footer-ctn-right">
+                <ul class="footright">
+                    <li>ph.(02)58345771</li>
+                    <li><a href="#">infoeliessalo@gmail.com</a></li>
+                </ul>
+            </div>
+    </footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+    <script>
+        const mobileBtn = document.getElementById("m");
+        const nav=document.querySelector("nav");
+        const mobileBtnExit = document.getElementById("c");
+
+        mobileBtn.addEventListener("click",() => {
+        nav.classList.add("menu");
+        })
+        mobileBtnExit.addEventListener("click",() => {
+        nav.classList.remove("menu");
+        })
+    </script>
+</body>
+</html>
