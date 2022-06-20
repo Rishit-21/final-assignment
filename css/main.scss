@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
-:root{
-    --primary-bgcolor:
-}
 body{
     background-image:url("../images/background image.jpg");
     background-size: contain;
@@ -10,8 +7,10 @@ body{
     li{
         list-style: none;
     }
-
-      
+    hr{
+        margin-top: 0; 
+        line-height: 0;
+    }  
 }
 .navBar{
     padding: 1em;
@@ -24,8 +23,8 @@ body{
     }
    .mlink{
         display: flex;
-        position:relative;
         list-style: none;
+        align-items: center;
        
     }
      a{
@@ -37,30 +36,26 @@ body{
         color: white;
         padding:.5em;
         font-weight: bold;
-        //float: right;
-        //height: 2em;
         &:hover{
             background: white ;
             color: black;
         }
         margin-top: 1em;
         margin-right: 1em;
-        border-radius: 1em;
+        font-size: small;
     }
     .fb{
-        background: rgb(134, 134, 239);
+        background: rgb(66 103 178);
         padding: .5em;
         color: white;
         display: grid;
         display: flex;
-       // float: right;
-        //height: 2em;
         &:hover{
             background: white ;
-            color:rgb(134, 134, 239);
+            color:rgb(66 103 178);
         }   
-        margin-top: -.5;
-        border-radius: 1em;     
+        margin-top: -.5;  
+        font-size: small;  
     }
     nav{
         display: none;
@@ -126,6 +121,7 @@ body{
        line-height: 1.5em; 
        text-decoration:none;
        display:flex;
+       border-bottom:solid black;
     }
 }
 .slideshow-container {
@@ -214,35 +210,6 @@ body{
     background: rgba($color: #20272e, $alpha: 0.9);;
     height: 100%;
     text-decoration: none;
-    /*a{
-        text-decoration: none;
-        display: inline-block;
-    }*/
-    /*.bn{
-        background: black;
-        color: white;
-        padding: .5em;
-        font-weight: bold;
-        float: right;
-        &:hover{
-            background: white ;
-            color: black;
-        }
-        margin: .25em;
-    }*/
-    /*.fb{
-        background: rgb(134, 134, 239);
-        padding: .5em;
-        color: white;
-        display: grid;
-        display: flex;
-        float: right;
-        &:hover{
-            background: white ;
-            color:rgb(134, 134, 239);
-        } 
-        margin: .25em;       
-    }*/
     .cross{
         margin: .25em;
         color: #f2f2f2;
@@ -261,7 +228,7 @@ body{
         color: white;
         float: right;
         margin-right: 60%;
-        margin-left: 0;
+        margin-left: 1em;
         text-align: left;
         font-size:large;
         margin-top: 3em;
@@ -285,6 +252,8 @@ footer{
         margin-right: 0;
         display: grid;
         grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+
+       
         
         a{
             text-decoration: none; 
@@ -293,6 +262,7 @@ footer{
             cursor: pointer;
             place-content: space-between;
             position: relative;
+            
             
             &:hover{
                 font-weight: bold;
@@ -307,7 +277,7 @@ footer{
         place-content: space-between;
         margin-left: 5%;
         margin-right: 5%;
-        color: black;
+        color: white;
         background: rgba($color: #20272e, $alpha: 0.7);
         border: 1em;
         padding: .25em;
@@ -339,6 +309,7 @@ footer{
         text-align: left;
         font-size: large;
         font-weight: bold;
+        color:#717171;
         line-height: 1.25em;
     }
     .navBar .container {
@@ -354,8 +325,9 @@ footer{
         background: none;
         position: unset;
         height: auto;
-        width: 100%;
+        width: auto;
         padding: 0;
+       
 
         ul{
             display: flex;
@@ -363,18 +335,24 @@ footer{
             margin-bottom:0;
             margin-right: 2em;
             margin-left: -1em;
+           
         }
         a{
             color: black;
             font-size: 1em;
             padding: .1em 1em;
             margin: 0;
+            border-bottom:solid black;
+            &:focus{
+                color: palevioletred;
+            }
+
         }
         
     }
 
 }
-@media only screen and (min-width:980px){
+@media only screen and (min-width:1080px){
     .info{
         .button{
             display: flex;
@@ -421,8 +399,11 @@ footer{
     .info-container{
         float: right;
         margin-top: 2.5em;
-        margin-right: 7em;
+        margin-right: 12em;
         position: relative;
         left: 0;
+        dd{
+            margin-right: 2em;
+        }
     }
 }
