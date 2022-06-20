@@ -34,15 +34,15 @@ body{
     .bn{
         background: black;
         color: white;
-        padding:.5em;
+        padding:.3em;
         font-weight: bold;
         &:hover{
             background: white ;
             color: black;
         }
-        margin-top: 1em;
-        margin-right: 1em;
-        font-size: small;
+        margin-top: 0em;
+        margin-right: .2em;
+        font-size: medium;
     }
     .fb{
         background: rgb(66 103 178);
@@ -89,6 +89,7 @@ body{
         color: white;
         line-height: 2.5em;
         .link{
+            
             background: palevioletred;
             text-decoration: none;
             font-weight: bold;
@@ -99,7 +100,7 @@ body{
             font-size: 1em ;
             cursor: pointer;
             display: inline;
-            margin:2em;
+            margin:em;
             &:hover{
                 background: white;
                 color: palevioletred;
@@ -228,8 +229,8 @@ body{
         list-style: none;
         color: white;
         float: right;
-        margin-right: 60%;
-        margin-left: 1em;
+        margin-right:3%;
+        margin-left: auto;
         text-align: left;
         font-size:large;
         margin-top: 3em;
@@ -274,20 +275,29 @@ footer{
 
     .footright{
         list-style: none;
-        display: flex;
+        display: grid;
+        //grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
+
         place-content: space-between;
         margin-left: 5%;
-        margin-right: 5%;
+        margin-right: 9%;
         color: white;
         background: rgba($color: #20272e, $alpha: 0.7);
         border: 1em;
         padding: .25em;
         font-size: 1.2em;
         cursor: pointer;
+        font-size:medium;
+        .i1{
+           // display: inline;
+            //align-items:column;
+        }
 
         a{
             color: white;
             text-decoration: none;
+            font-size: medium;
+            align-items:row;
 
             &:hover{
                 font-weight: bold;
@@ -371,6 +381,7 @@ footer{
             a{
                 color: white;
                 border-bottom:solid white;
+                
             }
         }
         

@@ -34,11 +34,11 @@ body hr {
 .navBar .bn {
   background: black;
   color: white;
-  padding: 0.5em;
+  padding: 0.3em;
   font-weight: bold;
-  margin-top: 1em;
-  margin-right: 1em;
-  font-size: small;
+  margin-top: 0em;
+  margin-right: 0.2em;
+  font-size: medium;
 }
 .navBar .bn:hover {
   background: white;
@@ -96,7 +96,7 @@ body hr {
   font-size: 1em;
   cursor: pointer;
   display: inline;
-  margin: 2em;
+  margin: em;
 }
 .info .button .link:hover {
   background: white;
@@ -243,8 +243,8 @@ nav .ctn {
   list-style: none;
   color: white;
   float: right;
-  margin-right: 60%;
-  margin-left: 1em;
+  margin-right: 3%;
+  margin-left: auto;
   text-align: left;
   font-size: large;
   margin-top: 3em;
@@ -280,20 +280,23 @@ footer .footul a:hover {
 }
 footer .footright {
   list-style: none;
-  display: flex;
+  display: grid;
   place-content: space-between;
   margin-left: 5%;
-  margin-right: 5%;
+  margin-right: 9%;
   color: white;
   background: rgba(32, 39, 46, 0.7);
   border: 1em;
   padding: 0.25em;
   font-size: 1.2em;
   cursor: pointer;
+  font-size: medium;
 }
 footer .footright a {
   color: white;
   text-decoration: none;
+  font-size: medium;
+  align-items: row;
 }
 footer .footright a:hover {
   font-weight: bold;
