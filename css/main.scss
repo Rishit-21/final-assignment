@@ -18,7 +18,7 @@ body{
     .logo{
          border: 1em;
          border-radius: 2em;
-         background:grey;
+         background:whitesmoke;
          margin-right: 4em;
     }
    .mlink{
@@ -28,7 +28,7 @@ body{
        
     }
      a{
-        color: white;
+        color:white;
         text-decoration: none;
     }
     .bn{
@@ -117,6 +117,7 @@ body{
     }
 
     dd{
+        color:black;
        margin-bottom: 1em;
        line-height: 1.5em; 
        text-decoration:none;
@@ -309,7 +310,7 @@ footer{
         text-align: left;
         font-size: large;
         font-weight: bold;
-        color:#717171;
+        color:#20272e;
         line-height: 1.25em;
     }
     .navBar .container {
@@ -338,7 +339,7 @@ footer{
            
         }
         a{
-            color: black;
+            color: #20272e;
             font-size: 1em;
             padding: .1em 1em;
             margin: 0;
@@ -353,6 +354,9 @@ footer{
 
 }
 @media only screen and (min-width:1080px){
+    body{
+        background-image: url("../images/bimage.jpg");
+    }
     .info{
         .button{
             display: flex;
@@ -363,7 +367,15 @@ footer{
     }
     .navBar nav{
         margin-left: 21%;
+        .ctn{
+            a{
+                color: white;
+                border-bottom:solid white;
+            }
+        }
+        
     }
+
 
     .slideshow-container{
         float: left;
@@ -382,6 +394,7 @@ footer{
         //margin-right: 50%;
         float: left;
         margin-left: 6em;
+        color: white;
     }
     .foot{
         margin-top:50%;
@@ -404,6 +417,8 @@ footer{
         left: 0;
         dd{
             margin-right: 2em;
+            color: white;
+            border-bottom: solid white;
         }
     }
 }

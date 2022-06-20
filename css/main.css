@@ -19,7 +19,7 @@ body hr {
 .navBar .logo {
   border: 1em;
   border-radius: 2em;
-  background: grey;
+  background: whitesmoke;
   margin-right: 4em;
 }
 .navBar .mlink {
@@ -111,6 +111,7 @@ body hr {
   font-weight: bold;
 }
 .info-container dd {
+  color: black;
   margin-bottom: 1em;
   line-height: 1.5em;
   text-decoration: none;
@@ -313,7 +314,7 @@ footer .footright a:hover {
     text-align: left;
     font-size: large;
     font-weight: bold;
-    color: #717171;
+    color: #20272e;
     line-height: 1.25em;
   }
 
@@ -341,7 +342,7 @@ footer .footright a:hover {
     margin-left: -1em;
   }
   .navBar nav a {
-    color: black;
+    color: #20272e;
     font-size: 1em;
     padding: 0.1em 1em;
     margin: 0;
@@ -352,6 +353,10 @@ footer .footright a:hover {
   }
 }
 @media only screen and (min-width: 1080px) {
+  body {
+    background-image: url("../images/bimage.jpg");
+  }
+
   .info .button {
     display: flex;
     text-align: center;
@@ -361,6 +366,10 @@ footer .footright a:hover {
 
   .navBar nav {
     margin-left: 21%;
+  }
+  .navBar nav .ctn a {
+    color: white;
+    border-bottom: solid white;
   }
 
   .slideshow-container {
@@ -380,6 +389,7 @@ footer .footright a:hover {
   .text {
     float: left;
     margin-left: 6em;
+    color: white;
   }
 
   .foot {
@@ -403,5 +413,7 @@ footer .footright a:hover {
   }
   .info-container dd {
     margin-right: 2em;
+    color: white;
+    border-bottom: solid white;
   }
 }/*# sourceMappingURL=main.css.map */
