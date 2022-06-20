@@ -355,7 +355,7 @@ footer .footright a:hover {
     color: palevioletred;
   }
 }
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 1750px) {
   body {
     background-image: url("../images/bimage.jpg");
   }
